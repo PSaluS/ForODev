@@ -1,6 +1,6 @@
-#Project for Optimo Development
+# Project for Optimo Development
 
-###Komentarz do zadania
+### Komentarz do zadania
 
 Do zrealizowania zadania wykożystałem flex-box, alternatynym sposobem może być css-grid.
 
