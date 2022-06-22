@@ -18,28 +18,54 @@
     justify-content: space-between;
 }
 
-/* S-view for screen < 583 */
+/* S-view for screen < 583 px*/
 @media only screen and (max-width: 582.9px){
     #ABC{
         background-color: blue;
+        margin: auto;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    #const2{
+        height: 100px;
     }
 }
 
-/* M-view for screen between 583 and 900 */
+/* M-view for screen between 583 and 900 px*/
 @media only screen and (min-width: 583px ) and (max-width: 900px) {
-#content {
+    #content {
+            display: flex;
+            flex-wrap: wrap;
+    }
+    #ABC{
+        background-color: rgb(175, 0, 0);
+        margin: 20px;
+    }
+    #const2{
+        height: 100px;
+    }
+}
+
+/* L-view for screen over 900 px */
+
+@media only screen and (min-width: 900.1px) {
+    #container{
         display: flex;
         flex-wrap: wrap;
-}
-#ABC{
-    background-color: rgb(175, 0, 0);
-}
+        justify-content: space-between;
+        width: 65vw;
+    }
+    #content {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #ABC{
+    background-color: white;
+    margin: 20px;
+    }
 }
 
 
-#container{
-
-}
 
 .const{
     width: 300px;
@@ -56,7 +82,6 @@
 }
 
 #const2{
-    height: 100px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -100,5 +125,4 @@
     text-align: center;
     font-size: 50px;
     padding-top: 20px;
-    margin: 20px;
 }
