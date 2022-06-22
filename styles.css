@@ -11,11 +11,12 @@
     background-color: rgb(78, 107, 36);
     height: 50px;
     width: 100%;
+    border: solid 5px black;
 }
 
 #content{
     background-color: rgb(0, 89, 6);
-    justify-content: space-between;
+    justify-content: space-between;;
 }
 
 /* S-view for screen < 583 px*/
@@ -92,6 +93,7 @@
     height: 100px;
     background-color: red;
     margin: 20px;
+    border: solid 3px black;
 }
 
 #equal{
@@ -109,6 +111,7 @@
     width: 120px;
     height: 10px;
     background-color: blue;
+    border: solid 3px black;
 }
 
 #circle{
@@ -117,6 +120,7 @@
     background-color: rgb(0, 91, 80);
     border-radius: 50%;
     display: inline-block;
+    border: solid 3px black;
 }
 
 #ABC{
@@ -125,4 +129,5 @@
     text-align: center;
     font-size: 50px;
     padding-top: 20px;
+    border: solid 3px black;
 }
