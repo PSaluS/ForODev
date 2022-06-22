@@ -88,12 +88,32 @@
     flex-wrap: nowrap;
 }
 
+@keyframes rotateForSquare{
+    from{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
 .square{
     width: 100px;
     height: 100px;
     background-color: red;
     margin: 20px;
     border: solid 3px black;
+}
+
+#square1:hover{
+    animation: rotateForSquare 1s infinite ease-in-out;
+}
+
+#square2:hover{
+    animation: rotateForSquare 1s reverse infinite ease-in-out;
 }
 
 #equal{
@@ -130,4 +150,5 @@
     font-size: 50px;
     padding-top: 20px;
     border: solid 3px black;
+    transition: background-color 2s;
 }
